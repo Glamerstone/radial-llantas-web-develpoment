@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial 5</title>
+    <script>
+        var subjectObject = {
+        "Aguascalientes": {
+            "Aguascalientes": ["El Dorado"]  
+        },
+        "Campeche": {
+            "Campeche": ["Campeche"]
+        },
+        "Chiapas": {
+            "Tuxtla Gutierrez": ["5ta Norte", "Periferico Sur", "Palmas"],
+            "Villaflores": ["Villaflores"],
+            "San Cristobal de las Casas": ["San Cristobal"],
+            "Tapachula": ["Costera Tapachula","Guadalupe Tapachula"]
+        },
+        "Colima": {
+            "Colima": ["Colima"],
+            "Manzanillo": ["Manzanillo"]
+        },
+        "Guanajuato": {
+            "Leon": ["Aldama", "Juarez", "Parque Hidalgo", "Arbide"]
+        },
+        "Jalisco": {
+            "Guadalajara": ["8 de Julio", "Camionera", "Country", "Eduwiges", 
+            "Eulogio Parra", "Gonzalez Gallo", "Guadalupe", "Libertad", "Matriz Occdiente", 
+        "Providencia", "Revolucion",
+        "Transito", "Tolsa", "Bugambilias"],
+            "Zapopan": ["Patria", "Copernico"],
+            "Puerto Vallarta": ["Puerto Vallarta I", "Puerto Vallarta II"]
+        },
+        "Mexico": {
+            "CDMX": ["Parque Lira", "Universidad", "Calzada del Hueso"],
+            "Naucalpan de Juarez": ["Echegaray"],
+            "Cuajimalpa": ["Cuajimalpa"]
+        },
+        "Michoacan": {
+            "Zamora": ["5 de Mayo", "Madero"]
+        },
+        "Nuevo Leon": {
+            "Monterrey": ["Prolongacion Madero", "Garza Sada"]
+        },
+        "Oaxaca": {
+            "Huatulco": ["Huatulco"]
+        },
+        "Puebla": {
+            "Puebla": ["Juan Pablo II", "Perferico Puebla"]
+        },
+        "Quintan Roo": {
+            "Playa del Carmen": ["Playa del Carmen I", "Playa del Carmen II"],
+            "Cancun": ["Portillo", "Cancun-Uxmal", "Cancun-Aeropuertos"]
+        },
+        "Sinaloa": {
+            "Culiacan": ["Culiacan"]
+        },
+        "Sonora": {
+            "Hermosillo": ["Palo Verde"]
+        },
+        "Tabasco": {
+            "Cardenas": ["Cardenas II"],
+            "Villahermosa": ["Cardenas I", "Matriz Golfo", "Niños Heroes",
+            "27 de Febrero", "Ruiz Cortines", "Fuente May"]
+            
+        },
+        "Tepic": {
+            "Tepic": ["Tepic"]
+        },
+        "Veracruz": {
+            "Xalapa": ["Xalapa"],
+            "Veracruz": ["Cuauhtemoc"],
+            "Boca del Rio": ["COsta Verde"]
+        },
+        "Yucatan": {
+            "Merida": ["Matriz Peninsula", "Francisco de Montejo", "Cd. Industrial", 
+            "Itzaes", "60 Norte", "Prolongacion Montejo", "Monte Alban", "Mexico Oriente",
+            "Mejorada", "Aleman", "65 Oriente"]
+        }
+        }
+        window.onload = function() {
+        var subjectSel = document.getElementById("subject");
+        var topicSel = document.getElementById("topic");
+        var chapterSel = document.getElementById("chapter");
+        for (var x in subjectObject) {
+            subjectSel.options[subjectSel.options.length] = new Option(x, x);
+        }
+        subjectSel.onchange = function() {
+            //empty Chapters- and Topics- dropdowns
+            chapterSel.length = 1;
+            topicSel.length = 1;
+            //display correct values
+            for (var y in subjectObject[this.value]) {
+            topicSel.options[topicSel.options.length] = new Option(y, y);
+            }
+        }
+        topicSel.onchange = function() {
+            //empty Chapters dropdown
+            chapterSel.length = 1;
+            //display correct values
+            var z = subjectObject[subjectSel.value][this.value];
+            for (var i = 0; i < z.length; i++) {
+            chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+            }
+        }
+        }
+    </script>
+
+</head>
+<body>
+    <h4>Place some information</h4>
+<br>
+<form class="custom-select" name="form1" id="form1" action="/action_page.php">
+    <fieldset>
+        <legend>Estado</legend>
+        <select name="subject" id="subject">
+            <option value="" selected>Seleccione su Estado</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Municipio</legend>
+        <select name="topic" id="topic">
+            <option value="" selected>Seleccione su Ciudad</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Sucursal</legend>
+        <select name="chapter" id="chapter">
+            <option value="" selected>Seleccione la Sucursal</option>
+        </select>
+    </fieldset>
+
+  <br><br>
+  <input style="border: 1px solid #000; padding: 2px 2px; border-radius: 2px; background-color: #fff;" type="submit" value="Submit">  
+</form>
+<br>
+<h4>Additional information</h4>
+<script>
+    console.log($('#myselect').val());
+    console.log(topic.value);
+    console.log(chapter.value);
+</script>
+</body>
+</html>

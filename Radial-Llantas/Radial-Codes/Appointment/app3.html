@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial 2</title>
+    <style>
+    * {
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    body {
+        font-family: "Lato", sans-serif;
+        background-color: #EFF3F4;
+    }
+
+    /* Style the tab */
+    .states {
+        float: left;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        width: 35%;
+        height: 500px;
+        overflow-y: auto;
+    }
+
+    /* Style the buttons inside the states */
+    .states button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .states button:hover {
+    background-color: #ddd;
+    }
+
+    /* Create an active/current "tab button" class */
+    .states button.active {
+    background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .statecontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 60%;
+    border-left: none;
+    height: fit-content;
+    background-color: lightblue;
+    }
+    .radial-store {
+        margin-top: 10px;
+        margin-bottom: 10px;    
+    }
+
+    @media screen and (max-width: 700px) {
+    .states {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .stateslinks  {float: left;}
+    div.content {margin-left: 0;}
+    }
+
+    @media screen and (max-width: 400px) {
+    .stateslinks  {
+        text-align: center;
+        float: none;
+    }
+    .statecontent{
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+    }
+
+
+    /* This section does not work in shopify. Instead we need to modify
+    .rte a:not(.button) in theme.css of Shopify*/
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+    
+    </style>
+</head>
+<body>
+
+<h2>Seleccione su estado</h2>
+
+<div class="states">
+    <button style="background-color: #fbc205;" class="tablinks" onclick="openCity(event, 'Estados')" id="defaultOpen">Estados:</button>
+    <a href="#Aguascalientes"><button class="stateslinks" onclick="openCity(event, 'Aguascalientes')">Aguascalientes</button></a>
+    <a href="Campeche"><button class="stateslinks" onclick="openCity(event, 'Campeche')">Campeche</button></a>
+    <a href="Chiapas"><button class="stateslinks" onclick="openCity(event, 'Chiapas')">Chiapas</button></a>
+    <a href="Colima"><button class="stateslinks" onclick="openCity(event, 'Colima')">Colima</button></a>
+    <a href="Guanajuato"><button class="stateslinks" onclick="openCity(event, 'Guanajuato')">Guanajuato</button></a>
+    <a href="#Jalisco"><button class="stateslinks" onclick="openCity(event, 'Jalisco')">Jalisco</button></a>
+    <a href="Mexico"><button class="stateslinks" onclick="openCity(event, 'México')">México</button></a>
+    <a href="Michoacan"><button class="stateslinks" onclick="openCity(event, 'Michoacán')">Michoacán</button></a>
+    <a href="NuevoLeon"><button class="stateslinks" onclick="openCity(event, 'Nuevo León')">Nuevo León</button></a>
+</div>
+
+<div id="Aguascalientes" class="statecontent">
+    <h3>Seleccione la sucursal en la que desea agentar su cita:</h3>
+    <ul>
+        <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">El Dorado</a> </div>
+    </ul>
+   
+  </div>
+
+<div id="Jalisco" class="statecontent">
+    <h3>Seleccione la sucursal en la que desea agentar su cita:</h3>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">8 de Julio</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Camionera</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Country</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Eduwiges</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Eulogio Parra</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Gonzalez Gallo</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Guadalupe</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Libertad</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Matriz Occidente</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Providencia</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Revolución</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Transito</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Tolsa</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Bugambilias</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Patria</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Copernico</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Puerto Vallarta 1</a></div>
+    <div class="radial-store"><a href="https://forms.gle/sax5uj2oSe7xYZ718">Puerto Vallarta 2</a></div>
+</div>
+
+<div id="Paris" class="statecontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="statecontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, statecontent, stateslinks;
+  statecontent = document.getElementsByClassName("statecontent");
+  for (i = 0; i < statecontent.length; i++) {
+    statecontent[i].style.display = "none";
+  }
+  stateslinks = document.getElementsByClassName("stateslinks");
+  for (i = 0; i < stateslinks.length; i++) {
+    stateslinks[i].className = stateslinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 

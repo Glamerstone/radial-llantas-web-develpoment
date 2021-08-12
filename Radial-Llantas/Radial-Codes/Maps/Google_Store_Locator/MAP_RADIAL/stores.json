@@ -1,0 +1,233 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-103.3749947,
+                    20.6541455
+                    
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "sucursales",
+                "hours": "9am - 7pm",
+                "description": "Modern twists on classic pastries. We're part of a larger chain of sucursaless and sucursaless.",
+                "name": "RADIAL LLANTAS Lázaro Cárdenas",
+                "phone": "+523332683060",
+                "storeid": "01"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-99.22633600859834, 
+                    19.496363220462822
+                    
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "sucursales",
+                "hours": "9am - 7pm",
+                "description": "Come and try our award-winning cakes and pastries. We're part of a larger chain of sucursaless and sucursaless.",
+                "name": "RADIAL LLANTAS Echegaray",
+                "phone": "+525553600350",
+                "storeid": "02"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-103.36026327976226,
+                    20.64898581643781
+                    
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "sucursales",
+                "hours": "9am - 7pm",
+                "description": "Whatever the occasion, whether it's a birthday or a wedding, Josie's sucursales has the perfect treat for you. We're part of a larger chain of sucursaless and sucursaless.",
+                "name": "RADIAL LLANTAS 8 de Julio",
+                "phone": "+523338101672",
+                "storeid": "03"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [ -99.25536303558198,
+                    19.380976884088653
+                   
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "sucursales",
+                "hours": "9am - 7pm",
+                "description": "A gourmet sucursales that will delight your senses. We're part of a larger chain of sucursaless and sucursaless.",
+                "name": "RADIAL LLANTAS Cuajimalpa",
+                "phone": "+525555132908",
+                "storeid": "04"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-99.1885262932541,
+                    19.405954077156586
+                    
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "sucursales",
+                "hours": "9am - 7pm",
+                "description": "Spoil yourself or someone special with our classic pastries. We're part of a larger chain of sucursaless and sucursaless.",
+                "name": "RADIAL LLANTAS Parque Lira",
+                "phone": "+525555162059",
+                "storeid": "05"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-99.17360166441803,
+                    19.356580063243477
+                    
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "sucursales",
+                "hours": "9am - 7pm",
+                "description": "Come and feast your eyes and tastebuds on our delicious pastries and cakes. We're part of a larger chain of sucursaless and sucursaless.",
+                "name": "RADIAL LLANTAS Universidad",
+                "phone": "+525591551579",
+                "storeid": "06"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-98.28087673558198,
+                    19.106332930251146
+                    
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "sucursales",
+                "hours": "9am - 7pm",
+                "description": "Josie's sucursales is family-owned, and our delectable pastries, cakes, and great coffee are renowed. We're part of a larger chain of sucursaless and sucursaless.",
+                "name": "RADIAL LLANTAS Periférico Puebla",
+                "phone": "+522227684553",
+                "storeid": "07"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-98.22134503558196,
+                    19.027991649561624
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "sucursales",
+                "hours": "9am - 7pm",
+                "description": "Oakham's favorite spot for fresh coffee and delicious cakes. We're part of a larger chain of sucursaless and sucursaless.",
+                "name": "RADIAL LLANTAS Juan Pablo II",
+                "phone": "+522221366796",
+                "storeid": "08"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-93.13830046441802,
+                    16.74995028939294
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "sucursales",
+                "hours": "9am - 7pm",
+                "description": "Enjoy freshly brewed coffe, and home baked cakes in our homely sucursales. We're part of a larger chain of sucursaless and sucursaless.",
+                "name": "RADIAL LLANTAS Periférico Sur",
+                "phone": "+529611214918",
+                "storeid": "09"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-93.08987053558197,
+                    16.74896272631542                    
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "sucursales",
+                "hours": "9am - 7pm",
+                "description": "A delicious array of pastries with many flavours, and fresh coffee in an snug sucursales. We're part of a larger chain of sucursaless and sucursaless.",
+                "name": "RADIAL LLANTAS Matriz Palmas",
+                "phone": "+529616141448",
+                "storeid": "10"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-93.12449263558197,
+                    16.759855036897424                    
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "sucursales",
+                "hours": "9am - 7pm",
+                "description": "Grab a freshly brewed coffee, a decadent cake and relax in our idyllic sucursales. We're part of a larger chain of sucursaless and sucursaless.",
+                "name": "RADIAL LLANTAS 5ta Norte",
+                "phone": "+529616121918",
+                "storeid": "11"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-92.65532613558196,
+                    16.731815321629476                    
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "sucursales",
+                "hours": "9am - 7pm",
+                "description": "Come in and unwind at this idyllic sucursales with fresh coffee and home made cakes. We're part of a larger chain of sucursaless and sucursaless.",
+                "name": "RADIAL LLANTAS San Cristóbal",
+                "phone": "+529676783107",
+                "storeid": "12"
+            }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -93.27456436441803,
+                    16.228104842458396                    
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "category": "sucursales",
+                "hours": "9am - 7pm",
+                "description": "Fresh coffee and delicious cakes in an snug sucursales. We're part of a larger chain of sucursaless and sucursaless.",
+                "name": "RADIAL LLANTAS Villaflores",
+                "phone": "+529656521000",
+                "storeid": "13"
+            }
+        }
+    ]
+}

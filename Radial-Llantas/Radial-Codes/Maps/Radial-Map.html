@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Map</title>
+
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+      #marker{
+          background-image: url(https://cdn.shopify.com/s/files/1/0257/8605/6753/files/Pin_1.png?v=1613646379);
+      }
+    </style>
+    <script>
+     function initMap() {
+  const myLatLng = { lat: -25.363, lng: 131.044 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: myLatLng,
+  });
+  new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "Hello World!",
+  });
+}
+
+    </script>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlMk8xN7Z-Cq1aBdPVrp5A7Vy7chXw0DY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+  </body>
+</html>
