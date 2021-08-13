@@ -1,0 +1,8 @@
+La página de "Sucursales" en Shopify autocomenta ciertas secciones del código 
+por lo que nosotros debemos remover los caracteres que hacen el comentario.
+
+Se debe usar el comando "Ctrl + F" para buscar la palabra "script",
+una vez que resalte los inicios de scripts debemos buscar:
+"// <![CDATA[" y "// ]]>"
+
+Esos caracteres los debemos borrar y guardar la página.
